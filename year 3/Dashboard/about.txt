@@ -1,0 +1,98 @@
+{
+    "client": {
+        "host": "10.101.53.35"
+    },
+    "server": {
+        "current_time":
+        "services": [
+            {
+                "name": "weather",
+                "widgets": [
+                    {
+                        "name": "city_temperature",
+                        "description": "Display temperature for a city",
+                        "params": [
+                            {
+                                "name": "city",
+                                "type": "string"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "currency",
+                "widgets": [
+                    {
+                        "name": "exchange_rate",
+                        "description": "Display the exchange rate of two currencies",
+                        "params": [
+                            {
+                                "name": "currency1",
+                                "type": "string"
+                            },
+                            {
+                                "name": "currency2",
+                                "type": "string"
+                            },
+                            {
+                                "name": "value",
+                                "type": "string"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "youtube",
+                "widgets": [
+                    {
+                        "name": "channel_info",
+                        "description": "Display the informations of a channel",
+                        "params": [
+                            {
+                                "name": "name",
+                                "type": "string"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "steam",
+                "widgets": [
+                    {
+                        "name": "get_game",
+                        "description": "Display the informations about a game",
+                        "params": [
+                            {
+                                "name": "name",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "friend_list",
+                        "description": "Display the friend list of a given player",
+                        "params": [
+                            {
+                                "name": "name",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "history",
+                        "description": "Display the last played games of a player",
+                        "params": [
+                            {
+                                "name": "name",
+                                "type": "string"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width" />
+        <base href="/" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+        <title>Dash Board</title>
+        <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <p id="bannierBlo"><img src="bann.png" alt="bannier" id="bannierImg"/></a></p>
+        <div id="registerBack">
+            <div id="registerForm">
+                <button type="button" id="Rx" >x</button>
+                <form action="" method="get" class="Register">
+                    <label for="Email">Email: </label>
+                    <input type="text" name="Email" id="Remail">
+                    <label for="Password">Password: </label>
+                    <input type="password" name="Password" id="Rpassword">
+                    <button type="button" id="Rsubmit">Log in</button>
+                </form>
+            </div>
+        </div>
+        <div id="loggingBack">
+            <div id="logginForm">
+                
+                <h1>Login</h1>
+                <p id="Luser">hello</p>
+                
+                <!-- <div class="container unauthenticated">
+                  With GitHub: <a href="/oauth2/authorization/github">click here</a>
+                </div>
+                <div class="container unauthenticated">
+                  With Google: <a href="/oauth2/authorization/google">click here</a>
+                </div>
+                <div class="container authenticated" style="display: none">
+                  Logged in as: <span id="user"></span>
+                  <div>
+                    <button onClick="logout()" class="btn btn-primary">Logout</button>
+                  </div>
+                </div> -->
+                <!-- <p>With GitHub: <a href="/oauth2/authorization/github">click here</a></p>
+                <p>With Google: <a href="/oauth2/authorization/google">click here</a></p>
+                 -->
+
+                <form action="" method="get" class="logging">
+                    <label for="Email">Email: </label>
+                    <input type="text" name="Email" id="Lemail">
+                    <label for="Password">Password: </label>
+                    <input type="password" name="Password" id="Lpassword">
+                    <button type="button" id="Lsubmit">Log in</button>
+                </form>
+                <button type="button" id="Lregister" >Register</button>
+            </div>
+        </div>
+        <div id="menu">
+            <table id="MTable">
+                <thead>
+                    <tr>
+                        <th style="font-size:x-large; padding-bottom: 10px;">Content :</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td id="OWeather">
+                        <button type="button" id="+OWeather">+</button>
+                        Weather
+                    </td>
+                </tr>
+                <tr>
+                    <td id="OYoutube">
+                        <button type="button" id="+OYoutube">+</button>
+                        Youtube
+                    </td>
+                </tr>
+                <tr>
+                    <td id="OConversion">
+                        <button type="button" id="+OConversion">+</button>
+                        Conversion
+                    </td>
+                </tr>
+                <tr>
+                    <td id="OGameFinder">
+                        <button type="button" id="+OGameFinder">+</button>
+                        GameFinder
+                    </td>
+                </tr>
+                <tr>
+                    <td id="OFriendList">
+                        <button type="button" id="+OFriendList">+</button>
+                        Friendlist
+                    </td>
+                </tr>
+                <tr>
+                    <td id="OHistory">
+                        <button type="button" id="+OHistory">+</button>
+                        History
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="board">
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="/webjars/js-cookie/js.cookie.js"></script>
+        <!-- <script type="text/javascript">
+          $.ajaxSetup({
+            beforeSend: function (xhr, settings) {
+              if (settings.type == 'POST' || settings.type == 'PUT'
+                || settings.type == 'DELETE') {
+                if (!(/^http:.*/.test(settings.url) || /^https:.*/
+                  .test(settings.url))) {
+                  // Only send the token to relative URLs i.e. locally.
+                  xhr.setRequestHeader("X-XSRF-TOKEN",
+                    Cookies.get('XSRF-TOKEN'));
+                }
+              }
+            }
+          });
+          $.get("/user", function (data) {
+            $("#user").html(data.name);
+            $(".unauthenticated").hide();
+            $(".authenticated").show();
+          });
+          var logout = function () {
+            $.post("/logout", function () {
+              $("#user").html('');
+              $(".unauthenticated").show();
+              $(".authenticated").hide();
+            })
+            return true;
+          }
+        </script> -->
+    </body>
+</html>

@@ -1,0 +1,182 @@
+110
+<nlogin><user_uuid><user_name>
+int client_event_logged_in(char const *user_uuid, const char *user_name);
+
+120
+<nlogout><user_uuid><user_name>
+int client_event_logged_out(char const *user_uuid, const char *user_name);
+
+130
+<nmp><user_uuid><message>
+int client_event_private_message_received(
+    char const *user_uuid,
+    char const *message_body);
+
+143
+<nreply><team_uuid><thread_uuid><user_uuid><reply_body>
+int client_event_thread_reply_received(
+    char const *team_uuid,
+    char const *thread_uuid,
+    char const *user_uuid,
+    char const *reply_body);
+
+140
+<nteam><team_uuid><team_name><team_description>
+int client_event_team_created(
+    char const *team_uuid,
+    char const *team_name,
+    char const *team_description);
+
+141
+<nchannel><channel_uuid><channel_name><channel_description>
+int client_event_channel_created(
+    char const *channel_uuid,
+    char const *channel_name,
+    char const *channel_description);
+
+142
+<nthread><thread_uuid><user_uuid><time><title><message>
+int client_event_thread_created(
+    char const *thread_uuid,
+    char const *user_uuid,
+    time_t thread_timestamp,
+    char const *thread_title,
+    char const *thread_body);
+
+210
+<users><user_uuid><user_name><status>
+int client_print_users(
+    char const *user_uuid,
+    char const *user_name,
+    int user_status);
+
+211
+<teams><team_uuid><team_name><team_description>
+int client_print_teams(
+    char const *team_uuid,
+    char const *team_name,
+    char const *team_description);
+
+212
+<channels><channel_uuid><channel_name><channel_description>
+int client_team_print_channels(
+    char const *channel_uuid,
+    char const *channel_name,
+    char const *channel_description);
+
+213
+<threads><thread_uuid><user_uuid><time><thread_title><thread_body>
+int client_channel_print_threads(
+    char const *thread_uuid,
+    char const *user_uuid,
+    time_t thread_timestamp,
+    char const *thread_title,
+    char const *thread_body);
+
+214
+<replies><thread_uuid><user_uuid><time><reply_body>
+int client_thread_print_replies(
+    char const *thread_uuid,
+    char const *user_uuid,
+    time_t reply_timestamp,
+    char const *reply_body);
+
+215
+<messages><sender_uuid><time><message_body>
+int client_private_message_print_messages(
+    char const *sender_uuid,
+    time_t message_timestamp,
+    char const *message_body);
+
+510
+<eteam><team_uuid>
+int client_error_unknown_team(char const *team_uuid);
+
+511
+<echannel><channel_uuid>
+int client_error_unknown_channel(char const *channel_uuid);
+
+512
+<ethread><thread_uuid>
+int client_error_unknown_thread(char const *thread_uuid);
+
+513
+<euser><user_uuid>
+int client_error_unknown_user(char const *user_uuid);
+
+520
+<elog>
+int client_error_unauthorized(void);
+
+530
+<emulti>
+int client_error_already_exist(void);
+
+310
+<iuser><user_uuid><user_name><user_status>
+int client_print_user(
+    char const *user_uuid,
+    char const *user_name,
+    int user_status);
+
+311
+<iteam><team_uuid><team_name><team_description>
+int client_print_team(
+    char const *team_uuid,
+    char const *team_name,
+    char const *team_description);
+
+312
+<ichannel><channel_uuid><channel_name><channel_description>
+int client_print_channel(
+    char const *channel_uuid,
+    char const *channel_name,
+    char const *channel_description);
+
+313
+<ithread><thread_uuid><user_uuid><thread_timestamp><thread_title><thread_body>
+int client_print_thread(
+    char const *thread_uuid,
+    char const *user_uuid,
+    time_t thread_timestamp,
+    char const *thread_title,
+    char const *thread_body);
+
+410
+<cteam><team_uuid><team_name><team_description>
+int client_print_team_created(
+    char const *team_uuid,
+    char const *team_name,
+    char const *team_description);
+
+411
+<cchannel><channel_uuid><channel_name><channel_description>
+int client_print_channel_created(
+    char const *channel_uuid,
+    char const *channel_name,
+    char const *channel_description);
+
+412
+<cthread><thread_uuid><user_uuid><time><thread_title><thread_body>
+int client_print_thread_created(
+    char const *thread_uuid,
+    char const *user_uuid,
+    time_t thread_timestamp,
+    char const *thread_title,
+    char const *thread_body);
+
+413
+<creply><thread_uuid><user_uuid><time><message>
+int client_print_reply_created(
+    char const *thread_uuid,
+    char const *user_uuid,
+    time_t reply_timestamp,
+    char const *reply_body);
+
+420
+<sub><user_uuid><team_uuid>
+int client_print_subscribed(char const *user_uuid, char const *team_uuid);
+
+430
+<unsub><user_uuid><team_uuid>
+int client_print_unsubscribed(char const *user_uuid, char const *team_uuid);

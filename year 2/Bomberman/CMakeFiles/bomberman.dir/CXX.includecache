@@ -1,0 +1,98 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/src/bomb.cpp
+graphic.hpp
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/src/graphic.hpp
+
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/src/bonus.cpp
+graphic.hpp
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/src/graphic.hpp
+
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/src/character.cpp
+graphic.hpp
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/src/graphic.hpp
+
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/src/draw2D.cpp
+graphic.hpp
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/src/graphic.hpp
+
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/src/draw3D.cpp
+graphic.hpp
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/src/graphic.hpp
+
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/src/fire_col.cpp
+graphic.hpp
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/src/graphic.hpp
+
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/src/game.cpp
+graphic.hpp
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/src/graphic.hpp
+
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/src/genmap.cpp
+graphic.hpp
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/src/graphic.hpp
+
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/src/graphic.hpp
+raylib.h
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/src/raylib.h
+raymath.h
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/src/raymath.h
+cstdio
+-
+ctime
+-
+vector
+-
+map
+-
+random
+-
+fstream
+-
+iostream
+-
+string
+-
+
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/src/ia.cpp
+graphic.hpp
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/src/graphic.hpp
+
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/src/main.cpp
+graphic.hpp
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/src/graphic.hpp
+
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/src/map.cpp
+graphic.hpp
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/src/graphic.hpp
+
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/src/menu.cpp
+graphic.hpp
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/src/graphic.hpp
+
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/src/radius.cpp
+graphic.hpp
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/src/graphic.hpp
+
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/src/utils.cpp
+graphic.hpp
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/src/graphic.hpp
+
+libs/raylib.h
+stdarg.h
+-
+stdbool.h
+-
+
+libs/raymath.h
+raylib.h
+libs/raylib.h
+math.h
+-
+

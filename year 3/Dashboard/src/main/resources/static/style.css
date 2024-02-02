@@ -1,0 +1,568 @@
+body {
+    margin: 0px;
+    background-color: rgb(0, 0, 0) !important;
+}
+
+#registerBack {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#registerForm {
+    background-color: #c2c3ff;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    height: 200px;  
+}
+
+
+#loggingBack {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#logginForm {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    height: 200px;  
+}
+
+#bannierBlo {
+    background-color: #000;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#bannierImg {
+    display: block;
+    width: 1000px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#menu {
+    min-height: 1000px;
+    width: 200px;
+    background-color: rgb(0, 0, 0);
+    float: left;
+    padding: 5px;
+}
+
+#MTable {
+    display: block;
+    padding: 15px;
+    background-color: bisque;
+    border: 5px solid grey;
+}
+
+#board {
+    display: grid;
+    min-height: 1000px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 35px;
+    padding: 35px;
+    background-color: rgb(34, 34, 34);
+}
+
+.widget{
+    display: block;
+    height: 450px;
+    background-color: brown;
+    overflow: hidden;
+    border: 5px solid grey;
+}
+
+/* Header Widget */
+
+.Hblock {
+    height: 50px;
+    border-bottom: 5px solid grey;
+    background-color: rgb(0, 0, 0);
+}
+.Hblock h1 {
+    display: block;
+    margin: auto;
+    width:fit-content;
+    color: white;
+}
+.Hclose {
+    float: right;
+}
+.Bmove {
+    float: left;
+}
+
+
+/* Body widget */
+
+.Bblock {
+    height: 400px;
+}
+
+/* Weather widget */
+
+.Wtop {
+    display: block;
+    background-color: rgb(0, 102, 255);
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-right: 10px;
+    height: 210px;
+    overflow: scroll;
+}
+
+.Wtop::-webkit-scrollbar {
+    display: none;
+}
+
+.Wtop p {
+    display: block;
+    width: fit-content;
+    margin: 3px;
+    margin-left: auto;
+    padding: 0px;
+    color: white;
+}
+
+.Wmid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: rgb(0, 0, 119);
+    height: 130px;
+}
+
+.Wmid div {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.Wmid p, .Wmid h2 {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.Wmid h2 {
+    margin-top: 12px;
+}
+
+.Wbot {
+    display: block;
+    height: 60px;
+    padding: 10px;
+    background-color: black;
+}
+
+.Wbot input {
+    margin-left: 28%;
+}
+
+/* Conversion app */
+
+.Ctop {
+    height: 320px;
+    padding: 30px;
+    overflow: hidden;
+    background-color: rgb(189, 133, 12);
+}
+
+.Ctop input {
+    display: block;
+    width: 90%;
+    height: 40px;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: xx-large;
+    border: 3px solid blue;
+    background-color: rgb(255, 254, 187);
+}
+
+.Ctop select {
+    display: block;
+    width: 70%;
+    height: 40px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: xx-large;
+    border: 3px solid blue;
+    background-color: rgb(255, 254, 187);
+}
+
+.Ctop button {
+    display: block;
+    width: 90%;
+    height: 60px;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    font-size: xx-large;
+    color: yellow;
+    background-color: blue;
+}
+
+
+.Cbot {
+    display: block;
+    height: 70px;
+    background-color: black;
+    padding: 15px;
+}
+
+.Cbot p{
+    display: block;
+    min-width: 250px;
+    width: fit-content;
+    margin: auto;
+    font-size: xx-large;
+    text-align: center;
+    color: black;
+    background-color: white;
+}
+
+
+/* Youtube */
+
+.Ytop {
+    display: block;
+    background-color: red;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-right: 10px;
+    height: 240px;
+    overflow: scroll;
+}
+
+.Ytop h2 {
+    text-align: center;
+    margin: 0px;
+    color: white;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    
+}
+
+.Ytop p {
+    margin: 0px;
+    color: white;
+    margin-bottom: 15px;
+    font-size: large;
+}
+
+.Ytop::-webkit-scrollbar {
+    display: none;
+}
+
+
+.Ymid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(119, 0, 0);
+    height: 100px;
+}
+
+.Ymid div {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.Ymid p {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;
+    color: white;
+    margin-top: 0px;
+}
+
+.Ymid h2 {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    margin-top: 0px;
+}
+
+
+.Ybot {
+    display: block;
+    height: 60px;
+    padding: 10px;
+    background-color: black;
+}
+
+.Ybot input{
+    width:fit-content;
+    margin: auto;
+    margin-left: 25%;
+}
+
+.Ybot button{
+    width:fit-content;
+    margin: auto;
+}
+
+/* GameFinder */
+
+.Gtop {
+    display: block;
+    background-color: 	rgb(27, 40, 56);
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-right: 10px;
+    height: 240px;
+    overflow: scroll;
+}
+
+.Gtop h2 {
+    text-align: center;
+    margin: 0px;
+    color: white;
+    margin-bottom: 60px;
+    margin-top: 10px;
+}
+
+.Gtop p {
+    margin: 0px;
+    color: white;
+    margin-bottom: 15px;
+    font-size: large;
+}
+
+.Gtop::-webkit-scrollbar {
+    display: none;
+}
+
+
+.Gmid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(42, 71, 94);
+    height: 100px;
+}
+
+.Gmid div {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.Gmid p {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;
+    color: white;
+    margin-top: 0px;
+}
+
+.Gmid h2 {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    margin-top: 0px;
+}
+
+
+.Gbot {
+    display: block;
+    height: 60px;
+    padding: 10px;
+    background-color: black;
+}
+
+.Gbot input{
+    width:fit-content;
+    margin-left: 25%;
+}
+
+.Gbot button{
+    width:fit-content;
+}
+
+/* History */
+
+.Htop {
+    display: block;
+    background-color: rgb(27, 40, 56);
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-right: 10px;
+    height: 340px;
+    overflow: scroll;
+}
+
+.Htop h2 {
+    text-align: center;
+    margin: 0px;
+    color: white;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.Htop p {
+    margin: 0px;
+    color: white;
+    margin-bottom: 15px;
+    font-size: large;
+}
+
+.Htop::-webkit-scrollbar {
+    display: none;
+}
+
+.HtopContent {
+    overflow: scroll;
+
+}
+
+.HtopContent::-webkit-scrollbar {
+    display: none;
+}
+
+#Hcontainer {
+    position: relative;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100px;
+    overflow: scroll;
+    background-color: orange;
+    
+}
+
+#Hcontainer::-webkit-scrollbar {
+    display: none;
+}
+
+#Himg {
+    width: 100%;
+    height: 100px;
+    border: 2px solid salmon;
+}
+
+#Hp {
+    position: absolute;
+    font-size: xx-large;
+    top: 8px;
+    left: 16px;
+    text-shadow: 2px 2px 4px #000000;
+    color: violet;
+
+}
+
+#Hp2 {
+    position: absolute;
+    font-size: xx-large;
+    top: 45px;
+    left: 16px;
+    margin-left: 40px;
+    text-shadow: 2px 2px 4px #000000;
+    color: violet;
+
+}
+
+.Hbot {
+    display: block;
+    height: 60px;
+    padding: 10px;
+    background-color: black;
+}
+
+.Hbot input{
+    width:fit-content;
+    margin: auto;
+    margin-left: 25%;
+}
+
+.Hbot button{
+    width:fit-content;
+    margin: auto;
+}
+
+/* Friendlist */
+
+
+.Ftop {
+    display: block;
+    background-color: rgb(27, 40, 56);
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-right: 10px;
+    height: 340px;
+    overflow: scroll;
+}
+
+.Ftop p {
+    margin: 0px;
+    color: white;
+    margin-bottom: 15px;
+    font-size: large;
+}
+
+.Ftop::-webkit-scrollbar {
+    display: none;
+}
+
+.FtopContent {
+    overflow: scroll;
+
+}
+
+.FtopContent::-webkit-scrollbar {
+    display: none;
+}
+
+#Fp {
+    font-size: xx-large;
+    text-shadow: 2px 2px 4px #000000;
+    color: white;
+
+}
+
+.Fbot {
+    display: block;
+    height: 60px;
+    padding: 10px;
+    background-color: black;
+}
+
+.Fbot input{
+    width:fit-content;
+    margin: auto;
+    margin-left: 25%;
+}
+
+.Fbot button{
+    width:fit-content;
+    margin: auto;
+}

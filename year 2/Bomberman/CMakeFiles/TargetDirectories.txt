@@ -1,0 +1,3 @@
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/CMakeFiles/rebuild_cache.dir
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/CMakeFiles/bomberman.dir
+/home/AlexisP/delivery/year 2/B-YEP-400-STG-4-1-indiestudio-alexis.petrequin/CMakeFiles/edit_cache.dir
